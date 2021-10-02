@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser opened]]>
+    </line>
+    <line>
+      <![CDATA[We are currently on the following URL: https://www.google.ca/]]>
+    </line>
+    <line>
+      <![CDATA[Search using keyword: Kira]]>
+    </line>
+    <line>
+      <![CDATA[Verify the first link in search results to be: https://kirasystems.com/]]>
+    </line>
+    <line>
+      <![CDATA[Link from webpage: https://www.google.ca/search?q=Kira&source=hp&ei=vbhXYZ_nN4eGjLsP16W9mAU&iflsig=ALs-wAMAAAAAYVfGzdoVq1QidOyjMcG8dfLHt0Fy09pg&ved=0ahUKEwjfub-1zKrzAhUHA2MBHddSD1MQ4dUDCAo&uact=5&oq=Kira&gs_lcp=Cgdnd3Mtd2l6EANQ6gJY8gJgiANoAHAAeACAAQCIAQCSAQCYAQCgAQE&sclient=gws-wiz#]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
+    </line>
+    <line>
+      <![CDATA[Browser opened]]>
+    </line>
+    <line>
+      <![CDATA[We are currently on the following URL: https://www.google.ca/]]>
+    </line>
+    <line>
+      <![CDATA[Search using keyword: Kira Systems]]>
+    </line>
+    <line>
+      <![CDATA[Verify the first link in search results to be: https://kirasystems.com/]]>
+    </line>
+    <line>
+      <![CDATA[Link from webpage: https://kirasystems.com/]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
+    </line>
+    <line>
+      <![CDATA[Browser opened]]>
+    </line>
+    <line>
+      <![CDATA[We are currently on the following URL: https://www.google.ca/]]>
+    </line>
+    <line>
+      <![CDATA[Search using keyword: Kira Systems]]>
+    </line>
+    <line>
+      <![CDATA[Verify the first link in search results to be: https://kirasystems.com/]]>
+    </line>
+    <line>
+      <![CDATA[Link from webpage: https://kirasystems.com/]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2021-10-01T20:41:16 CDT" name="Default suite" finished-at="2021-10-01T20:41:28 CDT" duration-ms="12459">
+    <groups>
+    </groups>
+    <test started-at="2021-10-01T20:41:16 CDT" name="Default test" finished-at="2021-10-01T20:41:28 CDT" duration-ms="12459">
+      <class name="ca.google.tests.GoogleSearch">
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:16 CDT" name="testSetup" finished-at="2021-10-01T20:41:17 CDT" duration-ms="1621" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="invalidSearch()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:17 CDT" name="invalidSearch" finished-at="2021-10-01T20:41:20 CDT" duration-ms="2995" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The first link in search page is not for Kira Systems]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The first link in search page is not for Kira Systems
+at org.testng.Assert.fail(Assert.java:99)
+at ca.google.methods.GoogleHome.verifyLink(GoogleHome.java:137)
+at ca.google.tests.GoogleSearch.invalidSearch(GoogleSearch.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[We are currently on the following URL: https://www.google.ca/]]>
+            </line>
+            <line>
+              <![CDATA[Search using keyword: Kira]]>
+            </line>
+            <line>
+              <![CDATA[Verify the first link in search results to be: https://kirasystems.com/]]>
+            </line>
+            <line>
+              <![CDATA[Link from webpage: https://www.google.ca/search?q=Kira&source=hp&ei=vbhXYZ_nN4eGjLsP16W9mAU&iflsig=ALs-wAMAAAAAYVfGzdoVq1QidOyjMcG8dfLHt0Fy09pg&ved=0ahUKEwjfub-1zKrzAhUHA2MBHddSD1MQ4dUDCAo&uact=5&oq=Kira&gs_lcp=Cgdnd3Mtd2l6EANQ6gJY8gJgiANoAHAAeACAAQCIAQCSAQCYAQCgAQE&sclient=gws-wiz#]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidSearch -->
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:20 CDT" name="testTeardown" finished-at="2021-10-01T20:41:20 CDT" duration-ms="89" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:20 CDT" name="testSetup" finished-at="2021-10-01T20:41:21 CDT" duration-ms="1095" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="searchForKiraSystemsUsingAutoSuggestionAndVerifyLink()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:21 CDT" name="searchForKiraSystemsUsingAutoSuggestionAndVerifyLink" finished-at="2021-10-01T20:41:24 CDT" duration-ms="2806" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[We are currently on the following URL: https://www.google.ca/]]>
+            </line>
+            <line>
+              <![CDATA[Search using keyword: Kira Systems]]>
+            </line>
+            <line>
+              <![CDATA[Verify the first link in search results to be: https://kirasystems.com/]]>
+            </line>
+            <line>
+              <![CDATA[Link from webpage: https://kirasystems.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForKiraSystemsUsingAutoSuggestionAndVerifyLink -->
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:24 CDT" name="testTeardown" finished-at="2021-10-01T20:41:24 CDT" duration-ms="103" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+        <test-method is-config="true" signature="testSetup()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:24 CDT" name="testSetup" finished-at="2021-10-01T20:41:25 CDT" duration-ms="1089" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser opened]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSetup -->
+        <test-method signature="searchForKiraSystemsUsingKeypressAndVerifyLink()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:25 CDT" name="searchForKiraSystemsUsingKeypressAndVerifyLink" finished-at="2021-10-01T20:41:28 CDT" duration-ms="2535" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[We are currently on the following URL: https://www.google.ca/]]>
+            </line>
+            <line>
+              <![CDATA[Search using keyword: Kira Systems]]>
+            </line>
+            <line>
+              <![CDATA[Verify the first link in search results to be: https://kirasystems.com/]]>
+            </line>
+            <line>
+              <![CDATA[Link from webpage: https://kirasystems.com/]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- searchForKiraSystemsUsingKeypressAndVerifyLink -->
+        <test-method is-config="true" signature="testTeardown()[pri:0, instance:ca.google.tests.GoogleSearch@7ff95560]" started-at="2021-10-01T20:41:28 CDT" name="testTeardown" finished-at="2021-10-01T20:41:28 CDT" duration-ms="91" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testTeardown -->
+      </class> <!-- ca.google.tests.GoogleSearch -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
